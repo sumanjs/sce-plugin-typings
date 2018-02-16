@@ -1,7 +1,5 @@
-
-
 export enum SCEPluginTypes {
-
+  
   LANGUAGE = 'SCE_LANGUAGE'
   
 }
@@ -12,6 +10,14 @@ export interface SceEvent {
 
 export interface Updateable {
   updateCode: () => any;
+}
+
+export interface SCEPluginElement {
+  url: string,
+  code: string,
+  pluginName: string,
+  pluginType: string,
+  plugin: Object
 }
 
 export interface SceMain {
@@ -27,7 +33,6 @@ export interface SceMain {
   getStyledGeneratedCode: () => string;
   
 }
-
 
 // declare enum Foods {
 //   CHERRY = 'CHERRY',
