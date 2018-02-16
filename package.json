@@ -1,11 +1,13 @@
 {
   "name": "sce-plugin-typings",
-  "version": "0.0.102",
+  "version": "0.0.103",
   "description": "Suman Chrome Extension ecosystem types / typings",
   "main": "index.d.ts",
   "scripts": {
     "test": "suman"
   },
+  "typings": "index.d.ts",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ORESoftware/sce-plugin-typings.git"
