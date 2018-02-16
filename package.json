@@ -1,6 +1,6 @@
 {
   "name": "sce-plugin-typings",
-  "version": "0.0.101",
+  "version": "0.0.102",
   "description": "Suman Chrome Extension ecosystem types / typings",
   "main": "index.d.ts",
   "scripts": {
