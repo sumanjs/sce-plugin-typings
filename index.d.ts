@@ -6,6 +6,11 @@ export interface SceEvent {
 
 }
 
+export type SCECodeGenTypeContainer = {
+  SCEPlugin: SCECodeGenType
+}
+export type SCECodeGenType = new() => SceMain;
+
 export interface Updateable {
   updateCode: () => any;
 }
