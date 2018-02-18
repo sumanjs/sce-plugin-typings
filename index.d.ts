@@ -1,7 +1,5 @@
 export enum SCEPluginTypes {
-  
   LANGUAGE = 'SCE_LANGUAGE'
-  
 }
 
 export interface SceEvent {
@@ -15,6 +13,7 @@ export interface Updateable {
 export interface SCEPluginElement {
   url: string,
   code: string,
+  dateCreated: string,
   pluginName: string,
   pluginType: string,
   plugin: Object
