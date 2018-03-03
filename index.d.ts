@@ -24,7 +24,10 @@ export interface SCEPluginElement {
   plugin: Object
 }
 
-export interface SceMain {
+export abstract class SceMain {
+  
+  static pluginName: string;
+  static pluginType: string;
   
   initialize: () => void;
   
