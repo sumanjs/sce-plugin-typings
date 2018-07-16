@@ -1,5 +1,5 @@
 export enum SCEPluginTypes {
-  LANGUAGE = 'SCE_LANGUAGE',
+  LANGUAGE = "SCE_LANGUAGE",
 }
 
 export interface SceLocation {
