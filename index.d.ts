@@ -8,7 +8,23 @@ export interface SceLocation {
 
 export interface SceEvent {
   eventName: string;
+  fromBackground: boolean;
+  indirectlyFromPort: boolean;
   location: SceLocation;
+
+  relativeXPath: string;
+  relativeXPathFromElement: {
+    id: string|null;
+    name: string;
+    type: number;
+  };
+
+  sumanEventId: number;
+  xpath: {
+    bodyXPath: string;
+    classXPath: string|null;
+    idXPath: string|null;
+  }
 }
 
 export type SCECodeGenTypeContainer = {
