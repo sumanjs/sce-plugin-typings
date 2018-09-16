@@ -14,17 +14,26 @@ export interface SceEvent {
 
   relativeXPath: string;
   relativeXPathFromElement: {
-    id: string|null;
+    id: string | null;
     name: string;
     type: number;
   };
-
+  event: {
+    type: string;
+    target: {
+      elementClass: string;
+      elementId: string;
+      attributes: string;
+      value: string;
+      location: null | string;
+    };
+  };
   sumanEventId: number;
   xpath: {
     bodyXPath: string;
-    classXPath: string|null;
-    idXPath: string|null;
-  }
+    classXPath: string | null;
+    idXPath: string | null;
+  };
 }
 
 export type SCECodeGenTypeContainer = {
