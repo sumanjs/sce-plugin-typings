@@ -21,7 +21,7 @@
     "typings",
     "typescript"
   ],
-  "author": "Olegzandr VD",
+  "authors": ["Olegzandr VD", "Tim Mensch"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ORESoftware/sce-plugin-typings/issues"
