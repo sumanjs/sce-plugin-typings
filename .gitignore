@@ -1,3 +1,7 @@
 .idea
 node_modules
 *.log
+tmp
+temp
+tmp/worktrees
+temp/worktrees
