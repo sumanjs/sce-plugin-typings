@@ -4,7 +4,9 @@
   "description": "Suman Chrome Extension ecosystem types / typings",
   "main": "index.d.ts",
   "scripts": {
-    "test": "suman"
+    "test": "suman",
+    "lint:ores": "if [ -f .ores-lint/lint.sh ]; then sh .ores-lint/lint.sh; else echo 'ores-lint not installed'; fi",
+    "prepublishOnly": "npm run lint:ores"
   },
   "typings": "index.d.ts",
   "types": "index.d.ts",
@@ -21,10 +23,21 @@
     "typings",
     "typescript"
   ],
-  "authors": ["Olegzandr VD", "Tim Mensch"],
+  "authors": [
+    "Olegzandr VD",
+    "Tim Mensch"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ORESoftware/sce-plugin-typings/issues"
   },
-  "homepage": "https://github.com/ORESoftware/sce-plugin-typings#readme"
+  "homepage": "https://github.com/ORESoftware/sce-plugin-typings#readme",
+  "oresLint": {
+    "note": "Declared, not installed. ores-lint resolves these from a global install - see .ores-lint/README.md",
+    "requires": {
+      "eslint": ">=9",
+      "typescript-eslint": ">=8 (optional; without it .ts files are skipped)"
+    },
+    "install": "npm i -g eslint typescript-eslint"
+  }
 }
